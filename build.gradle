@@ -1,0 +1,40 @@
+buildscript {
+    ext {
+        springBootVersion = '2.2.4.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.13'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok'
+    compileOnly group: 'org.projectlombok', name: 'lombok'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
+    compileOnly group: 'com.h2database', name: 'h2'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf'
+    testCompile group: 'com.h2database', name: 'h2'
+    testCompile group: 'org.projectlombok', name: 'lombok'
+}
