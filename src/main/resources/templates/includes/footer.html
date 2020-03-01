@@ -3,5 +3,11 @@
 <body th:fragment="footer">
     <script src="/js/jquery-3.4.1.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $('#logoutBtn').on("click", function(e){
+            e.preventDefault();
+            $('#logout').submit();
+        });
+    </script>
 </body>
 </html>
