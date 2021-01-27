@@ -8,13 +8,13 @@ ide : intelliJ
 ```
 ## 화면
 1. 기본 화면
-![index](index.png)
+![index](https://user-images.githubusercontent.com/45007556/106032670-1e44d600-6114-11eb-89a3-f76ace8c8ebb.png)
 
 2. 목록
-![list](list.png)
+![list](https://user-images.githubusercontent.com/45007556/106032693-256be400-6114-11eb-8498-691763420daa.png)
 
 3. 로그인 화면
-![login](login.png)
+![login](https://user-images.githubusercontent.com/45007556/106032711-2ac92e80-6114-11eb-8526-6255b7795b30.png)
 
 4. 로그인 시
-![after](after.png)
+![after](https://user-images.githubusercontent.com/45007556/106032724-2f8de280-6114-11eb-9c27-d7b68e1d474e.png)
